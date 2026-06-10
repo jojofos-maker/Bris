@@ -80,66 +80,57 @@ footer{
 
 <h1>Meny</h1>
 
-<div class="category">
-<h2>Pizza</h2>
+<main>
 
-<div class="menu-item">
-<span>Margherita</span>
-<span class="price">199</span>
-</div>
+<h1>Meny</h1>
 
-<div class="menu-item">
-<span>Pepperoni</span>
-<span class="price">229</span>
-</div>
+<div class="menu-grid">
 
-<div class="menu-item">
-<span>Skjærgårdspizza</span>
-<span class="price">259</span>
-</div>
-</div>
+    <div class="menu-card">
+        <img src="assets/pizza.jpg" alt="Pizza">
+        <h3>Skjærgårdspizza</h3>
+        <p>Tomatsaus, mozzarella, reker og rødløk.</p>
+        <span>259 kr</span>
+    </div>
 
-<div class="category">
-<h2>Burgere</h2>
+    <div class="menu-card">
+        <img src="assets/burger.jpg" alt="Burger">
+        <h3>Bris Burger</h3>
+        <p>180g storfeburger med cheddar og fries.</p>
+        <span>249 kr</span>
+    </div>
 
-<div class="menu-item">
-<span>Bris Burger</span>
-<span class="price">249</span>
-</div>
+    <div class="menu-card">
+        <img src="assets/fishchips.jpg" alt="Fish & Chips">
+        <h3>Fish & Chips</h3>
+        <p>Sprø fisk med remulade og pommes frites.</p>
+        <span>269 kr</span>
+    </div>
 
-<div class="menu-item">
-<span>Cheeseburger</span>
-<span class="price">229</span>
-</div>
-</div>
+    <div class="menu-card">
+        <img src="assets/pepperoni.jpg" alt="Pepperoni">
+        <h3>Pepperoni Pizza</h3>
+        <p>Klassisk pizza med pepperoni og mozzarella.</p>
+        <span>229 kr</span>
+    </div>
 
-<div class="category">
-<h2>Sjømat</h2>
+    <div class="menu-card">
+        <img src="assets/dagensfangst.jpg" alt="Dagens fangst">
+        <h3>Dagens Fangst</h3>
+        <p>Fersk fisk servert med sesongens tilbehør.</p>
+        <span>329 kr</span>
+    </div>
 
-<div class="menu-item">
-<span>Fish & Chips</span>
-<span class="price">269</span>
-</div>
+    <div class="menu-card">
+        <img src="assets/barneburger.jpg" alt="Barneburger">
+        <h3>Barneburger</h3>
+        <p>Mini burger med pommes frites.</p>
+        <span>119 kr</span>
+    </div>
 
-<div class="menu-item">
-<span>Dagens fangst</span>
-<span class="price">329</span>
-</div>
-</div>
-
-<div class="category">
-<h2>Barnemeny</h2>
-
-<div class="menu-item">
-<span>Barneburger</span>
-<span class="price">119</span>
 </div>
 
-<div class="menu-item">
-<span>Barnepizza</span>
-<span class="price">119</span>
-</div>
-</div>
+</main>
 
 </main>
 
@@ -149,3 +140,41 @@ Bris · Lillesand
 
 </body>
 </html>
+
+.menu-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.menu-card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.menu-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.menu-card h3{
+    margin:20px;
+    margin-bottom:10px;
+}
+
+.menu-card p{
+    margin:0 20px 20px;
+    color:#666;
+}
+
+.menu-card span{
+    display:block;
+    margin:20px;
+    font-size:22px;
+    font-weight:bold;
+    color:#15375c;
+}
