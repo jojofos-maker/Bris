@@ -212,3 +212,24 @@ footer {
   .visit { margin-inline: 20px; padding: 30px; }
   .menu-card { padding: 24px; }
 }
+
+
+/* Forsidebilde */
+.hero-photo {
+  min-height: auto;
+  display: block;
+  padding: 0;
+  background: var(--cream);
+}
+
+.hero-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 900px) {
+  .hero-photo {
+    display: block;
+  }
+}
