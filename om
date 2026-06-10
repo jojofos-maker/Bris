@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Om oss | Bris</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background: #f8f3ea;
+      color: #15375c;
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 24px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fffaf2;
+    }
+
+    .logo {
+      font-size: 42px;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      margin-left: 24px;
+      text-decoration: none;
+      color: #15375c;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .hero {
+      min-height: 55vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(rgba(255,250,242,.75), rgba(255,250,242,.85)),
+        url("assets/bris-hero.png") center/cover;
+    }
+
+    .hero h1 {
+      font-size: clamp(48px, 8vw, 96px);
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 22px;
+      font-style: italic;
+      color: #2f6f9f;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 70px 24px;
+    }
+
+    section {
+      margin-bottom: 70px;
+    }
+
+    h2 {
+      font-size: 34px;
+      margin-bottom: 12px;
+    }
+
+    .lead {
+      font-size: 22px;
+      max-width: 760px;
+    }
+
+    .wave {
+      width: 120px;
+      height: 20px;
+      margin: 24px 0;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin-top: 28px;
+    }
+
+    .card {
+      background: #fffaf2;
+      border: 1px solid #eadfce;
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(21,55,92,.08);
+    }
+
+    .icon {
+      font-size: 34px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 22px;
+    }
+
+    .highlight {
+      background: #15375c;
+      color: #fffaf2;
+      border-radius: 24px;
+      padding: 44px;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background: #fffaf2;
+      color: #5f6f7c;
+      font-family: Arial, sans-serif;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      nav a {
+        margin: 0 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">Bris</div>
+    <nav>
+      <a href="index.html">Hjem</a>
+      <a href="meny.html">Meny</a>
+      <a href="om.html">Om oss</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Om Bris</h1>
+      <p>Et sted hvor sommer, mennesker og historier møtes.</p>
+    </div>
+  </section>
+
+  <main>
+    <section>
+      <h2>Vår visjon</h2>
+      <svg class="wave" viewBox="0 0 120 20">
+        <path d="M0 10 C20 0, 40 20, 60 10 S100 0, 120 10" fill="none" stroke="#2f6f9f" stroke-width="3"/>
+      </svg>
+      <p class="lead">
+        En global møteplass som samler folk i sommerparadiset.
+      </p>
+      <p>
+        Bris skal være et naturlig samlingspunkt i Lillesand – et sted hvor lokale
+        innbyggere, hyttefolk og besøkende møtes rundt gode måltider, nye
+        bekjentskaper og minnerike opplevelser.
+      </p>
+    </section>
+
+    <section>
+      <h2>Vår forretningsidé</h2>
+      <p class="lead">
+        En lokal restaurant som gjenspeiler sine omgivelser.
+      </p>
+      <p>
+        Vi samler mennesker og historier gjennom et trivelig lokale, god mat,
+        konkurransedyktige priser og topp service. Hos Bris skal gjestene oppleve
+        den samme varme og gjestfriheten som kjennetegner Sørlandskysten.
+      </p>
+    </section>
+
+    <section>
+      <h2>Overordnede mål</h2>
+
+      <div class="cards">
+        <div class="card">
+          <div class="icon">💰</div>
+          <h3>Økonomiske mål</h3>
+          <p>
+            Økonomisk lønnsomhet innen to år gjennom god drift, fornuftige priser
+            og sterk lokal forankring.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">❤️</div>
+          <h3>Kundemål</h3>
+          <p>
+            Høy kundetilfredshet gjennom vennlig service, god mat, kort ventetid
+            og en atmosfære gjestene vil tilbake til.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🌱</div>
+          <h3>Bærekraft og samfunnsansvar</h3>
+          <p>
+            Bedriften skal drives på en miljømessig, sosialt og økonomisk
+            bærekraftig måte.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlight">
+      <h2>Sommerfølelse året rundt</h2>
+      <p>
+        Med inspirasjon fra havet, skjærgården og menneskene i Lillesand ønsker
+        Bris å skape gode restaurantopplevelser for både lokale og tilreisende.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    Bris · Lillesand · Sommerlig mat ved kysten
+  </footer>
+</body>
+</html>
