@@ -32,29 +32,29 @@ nav a{
 }
 
 main{
-    max-width:1000px;
+    max-width:1400px;
     margin:auto;
-    padding:60px 20px;
+    padding:50px 20px 70px;
 }
 
 h1{
     text-align:center;
     font-size:60px;
+    margin-bottom:10px;
 }
 
-.category{
-    margin-top:60px;
+.intro{
+    text-align:center;
+    font-size:20px;
+    color:#5f6f7c;
+    margin-bottom:40px;
 }
 
-.menu-item{
-    display:flex;
-    justify-content:space-between;
-    padding:14px 0;
-    border-bottom:1px solid #ddd;
-}
-
-.price{
-    font-weight:bold;
+.menu-image img{
+    width:100%;
+    display:block;
+    border-radius:22px;
+    box-shadow:0 15px 45px rgba(0,0,0,.14);
 }
 
 footer{
@@ -67,114 +67,30 @@ footer{
 <body>
 
 <header>
-<div class="logo">Bris</div>
+    <div class="logo">Bris</div>
 
-<nav>
-<a href="index.html">Hjem</a>
-<a href="meny.html">Meny</a>
-<a href="om.html">Om oss</a>
-</nav>
+    <nav>
+        <a href="index.html">Hjem</a>
+        <a href="meny.html">Meny</a>
+        <a href="om.html">Om oss</a>
+    </nav>
 </header>
 
 <main>
+    <h1>Meny</h1>
 
-<h1>Meny</h1>
+    <p class="intro">
+        God mat, gode priser og sommerlige smaker ved kysten.
+    </p>
 
-<main>
-
-<h1>Meny</h1>
-
-<div class="menu-grid">
-
-    <div class="menu-card">
-        <img src="assets/pizza.jpg" alt="Pizza">
-        <h3>Skjærgårdspizza</h3>
-        <p>Tomatsaus, mozzarella, reker og rødløk.</p>
-        <span>259 kr</span>
+    <div class="menu-image">
+        <img src="assets/meny.png" alt="Meny for Bris">
     </div>
-
-    <div class="menu-card">
-        <img src="assets/burger.jpg" alt="Burger">
-        <h3>Bris Burger</h3>
-        <p>180g storfeburger med cheddar og fries.</p>
-        <span>249 kr</span>
-    </div>
-
-    <div class="menu-card">
-        <img src="assets/fishchips.jpg" alt="Fish & Chips">
-        <h3>Fish & Chips</h3>
-        <p>Sprø fisk med remulade og pommes frites.</p>
-        <span>269 kr</span>
-    </div>
-
-    <div class="menu-card">
-        <img src="assets/pepperoni.jpg" alt="Pepperoni">
-        <h3>Pepperoni Pizza</h3>
-        <p>Klassisk pizza med pepperoni og mozzarella.</p>
-        <span>229 kr</span>
-    </div>
-
-    <div class="menu-card">
-        <img src="assets/dagensfangst.jpg" alt="Dagens fangst">
-        <h3>Dagens Fangst</h3>
-        <p>Fersk fisk servert med sesongens tilbehør.</p>
-        <span>329 kr</span>
-    </div>
-
-    <div class="menu-card">
-        <img src="assets/barneburger.jpg" alt="Barneburger">
-        <h3>Barneburger</h3>
-        <p>Mini burger med pommes frites.</p>
-        <span>119 kr</span>
-    </div>
-
-</div>
-
-</main>
-
 </main>
 
 <footer>
-Bris · Lillesand
+    Bris · Lillesand
 </footer>
 
 </body>
 </html>
-
-.menu-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:30px;
-    margin-top:40px;
-}
-
-.menu-card{
-    background:white;
-    border-radius:18px;
-    overflow:hidden;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-}
-
-.menu-card img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-}
-
-.menu-card h3{
-    margin:20px;
-    margin-bottom:10px;
-}
-
-.menu-card p{
-    margin:0 20px 20px;
-    color:#666;
-}
-
-.menu-card span{
-    display:block;
-    margin:20px;
-    font-size:22px;
-    font-weight:bold;
-    color:#15375c;
-}
