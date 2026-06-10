@@ -13,9 +13,11 @@
     box-sizing:border-box;
 }
 
-html,
+
+ html,
 body{
-    height:100%;
+    width:100%;
+    height:100dvh;
     overflow:hidden;
     background:#f8f3ea;
     font-family:Georgia, serif;
@@ -48,8 +50,9 @@ nav a{
 }
 
 main{
-    height:calc(100vh - 70px);
-    padding:15px;
+    height:calc(100dvh - 70px);
+    padding:8px;
+    overflow:hidden;
 }
 
 .menu-image{
@@ -88,10 +91,11 @@ main{
         font-size:12px;
     }
 
-    main{
-        height:calc(100vh - 90px);
-        padding:10px;
-    }
+main{
+    height:calc(100dvh - 90px);
+    padding:6px;
+    overflow:hidden;
+}
 }
 
 </style>
